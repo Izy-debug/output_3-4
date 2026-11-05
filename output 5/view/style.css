@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #0003;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #253b80;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button, .add-button, .back-button {
+    display: inline-block;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+    background: #253b80;
+}
+
+.add-button {
+    background: #28a745;
+}
+
+.back-button {
+    background: #777;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #253b80;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: #f4f6fa;
+}
+
+.edit-button {
+    background: #2196f3;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.delete-button {
+    background: #dc3545;
+    padding: 7px 10px;
+    margin-top: 5px;
+}
+
+.actions form {
+    display: inline;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+@media(max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
